@@ -1,8 +1,9 @@
-import userData from '../userData.json';
-import Profile from '../components/Profile/Profile';
-import friends from '../friends.json';
-import FriendList from '../components/FriendList/FriendList';
-
+import userData from "../userData.json";
+import Profile from "../components/Profile/Profile";
+import friends from "../friends.json";
+import FriendList from "../components/FriendList/FriendList";
+import transactions from '../transactions.json';
+import TransactionHistory from '../components/TransactionHistory/TransactionHistory';
 import "./App.module.css";
 
 export default function App() {
@@ -17,6 +18,8 @@ export default function App() {
       />
 
       <FriendList friends={friends} />
+
+      <TransactionHistory items={transactions} />
     </>
   );
 }
